@@ -44,10 +44,19 @@ ul{
 button{
     background-color: orangered;
     font-size: 1rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     color: aliceblue;
     padding: 10px;
 
+}
+
+nav{
+    display: none;
+
+}
+
+.button-header{
+    display: none;
 }
 
 .banner{
@@ -76,10 +85,18 @@ button{
 
 .funcionalidades{
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulito{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+   
   
 }
 
@@ -88,14 +105,72 @@ button{
     background-color: orange;
     border-radius: 1rem;
     padding: 5px 13px;
+    position: relative;
+    left: 1rem;
+    
+
 }
 
 .titulito h3{
  
     padding: 5px;
+    padding-left: 1rem;
+   
+   
+    background-color: aquamarine;
+    padding-right: 10%;
     
-    width: 60%;
- 
+  
+    
+    
+}
+
+
+
+.what-they-said{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.card{
+    margin-top: 5rem;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: blanchedalmond;
+    padding: 20px;
+    width: 80%;
+}
+.card img{
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 5rem;
+}
+
+.card.otro{
+    display: none;
+    
+}
+
+.what-they-said button{
+    margin: 20px;
     
 }
 
@@ -107,6 +182,8 @@ button{
     align-items: center;
     text-align: center;
     padding: 30px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 footer{
@@ -117,11 +194,123 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    max-width: 100vw;
+    overflow: hidden;
 }
+
 
 .listas{
     display: flex;
     flex-direction: row;
     
+}
 
+
+.logos-container{
+    width: 100%;
+    margin: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos-container img{
+    width: 3rem;
+}
+
+.logo-footer{
+    height: 2rem;
+}
+
+
+@media screen and (min-width:1440px)  {
+    body{
+        background-color: rgb(255, 0, 179);
+    }
+
+
+    nav{
+        display: block;
+    
+    }
+    
+    .button-header{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+
+    .banner{
+        flex-direction: row-reverse;
+        height: 85vh;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .banner img{
+        height: 90%;
+    }
+
+    .banner div{
+        padding: 8rem;
+    }
+
+
+    .different{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .what-is-different{
+        padding: 8rem;
+        padding-top: 1rem;
+        text-align: left;
+        
+    }
+
+    .funcionalidades{
+        text-align: left;
+        background-color: initial;
+        margin: 4rem;
+    }
+
+    .titulito{
+      
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .titulito span{
+       
+        border-radius: 1rem;
+        padding: 5px 13px;
+
+        left: -5rem;
+       
+        
+        
+    
+    }
+    
+    .titulito h3{
+      background-color: initial;
+      position: relative;
+      left: -4rem;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+
+    .card.otro{
+        display: block;
+        
+    }
+    
 }
