@@ -14,9 +14,17 @@ body{
 
 a{
     text-decoration: none;
-    font-size: 1.5rem;
-    margin: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--main-color);
 }
+
+li a{
+    color: #FAFAFA;
+    font-size: 1.3rem;
+    display: block;
+}
+
+
 
 header{
     display: flex;
@@ -69,6 +77,7 @@ button{
 
 button:hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 input{
@@ -83,15 +92,23 @@ li{
     padding: 1rem;
 }
 
-li:hover{
-    
-}
-
 nav{
     display: none;
-
 }
 
+@keyframes titulo-decorativo{
+    0%{
+        color: white)
+    }
+
+    50%{
+        color:var(--main-color)
+    }
+
+    100%{
+        color:white
+    }
+}
 
 
 .button-header{
@@ -102,15 +119,16 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
     text-align: center;
     padding: 10px;
-
 }
 
 .banner img{
     width: 90%;
+}
+
+header img:hover{
+    cursor: pointer;
 }
 
 .different{
@@ -135,12 +153,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    transition:  .5s;
     
-    
-   
-  
 }
 
+.titulito:hover{
+    text-shadow: #232C50 2px 2px 15px;
+}
 
 .titulito span{
     background-color: var(--secondary-color);
@@ -149,8 +168,6 @@ nav{
     position: relative;
     left: 1rem;
     color: #FAFAFA;
-    
-
 }
 
 .titulito h3{
@@ -161,10 +178,9 @@ nav{
     padding-right: 10%;
 }
 
+
 .p-what-is-dif{
     text-align: left;
- 
-    
 }
 
 
@@ -183,7 +199,6 @@ nav{
     align-items: center;
     text-align: center;
 }
-
 
 
 .card{
@@ -276,6 +291,15 @@ footer{
 
 .logos-container img{
     width: 3rem;
+    transition: all .9s;
+}
+
+
+
+.logos-container img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    
 }
 
 .logo-footer{
@@ -283,6 +307,10 @@ footer{
     width: 40%;
     align-self: center;
     margin: 1rem;
+}
+
+.logo-footer:hover{
+    cursor:pointer;
 }
 
 .copy-desktop{
@@ -295,6 +323,9 @@ footer{
 
 .simplify button{
     box-shadow: none;
+}
+.simplify h2{
+    animation: titulo-decorativo 6s infinite;
 }
 
 form button{
@@ -320,6 +351,7 @@ input::placeholder{
 
     nav a{
         transition: 1s;
+        margin: 1rem;
     }
 
     nav a:hover{
@@ -351,7 +383,6 @@ input::placeholder{
         padding: 3rem;
     }
 
-
     .different{
         flex-direction: row;
         align-items: flex-start;
@@ -360,16 +391,13 @@ input::placeholder{
     .what-is-different{
         padding: 8rem;
         padding-top: 1rem;
-        text-align: left;
-        
+        text-align: left;      
     }
 
     .funcionalidades{
         text-align: left;
         background-color: initial;
         margin: 4rem;
-       
-        
         
     }
 
@@ -395,8 +423,6 @@ input::placeholder{
       
     }
 
-    
-
     .card-container{
         display: flex;
         flex-direction: row;
@@ -408,9 +434,6 @@ input::placeholder{
         display: block;
         
     }
-
-
-
 
     .simplify{
         flex-direction: row;
