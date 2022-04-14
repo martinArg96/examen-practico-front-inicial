@@ -55,7 +55,7 @@ ul{
 }
 
 button{
-    background-color: orangered;
+    background-color: var(--secondary-color);
     font-size: 1rem;
     border-radius: 2.5rem;
     color: aliceblue;
@@ -81,6 +81,10 @@ input{
 
 li{
     padding: 1rem;
+}
+
+li:hover{
+    
 }
 
 nav{
@@ -213,7 +217,7 @@ nav{
 }
 
 .simplify{
-    background-color: orangered;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,6 +226,7 @@ nav{
     padding: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
+    color: #FAFAFA;
 }
 
 .simplify button{
@@ -254,7 +259,7 @@ footer{
 
 .logos-container{
     width: 100%;
-    margin: 20px;
+    margin: auto;
 
     display: flex;
     justify-content: space-around;
@@ -264,7 +269,7 @@ footer{
    display: flex;
    flex-direction: column;
    align-content: center;
-   width: 100%;
+   width: 90%;
 
 }
 
@@ -300,7 +305,7 @@ form button{
 }
 
 input::placeholder{
-    color: #232C50;
+    color: var(--secondary-color);
 }
 
 
